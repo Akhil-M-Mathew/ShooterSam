@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\projects\\unreal 5 project\\ue_gamedevcourse\\unreal engine 5 c++ game dev\\shootersam\\shootersam\\source\\shootersam\\variant_combat\\animation\\animnotify_doattacktrace.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\projects\\unreal 5 project\\ue_gamedevcourse\\unreal engine 5 c++ game dev\\shootersam\\shootersam\\intermediate\\build\\win64\\x64\\shootersameditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\projects\\unreal 5 project\\ue_gamedevcourse\\unreal engine 5 c++ game dev\\shootersam\\shootersam\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\shootersam\\definitions.shootersam.h",
+            "d:\\projects\\unreal 5 project\\ue_gamedevcourse\\unreal engine 5 c++ game dev\\shootersam\\shootersam\\source\\shootersam\\variant_combat\\animation\\animnotify_doattacktrace.h",
+            "d:\\projects\\unreal 5 project\\ue_gamedevcourse\\unreal engine 5 c++ game dev\\shootersam\\shootersam\\intermediate\\build\\win64\\unrealeditor\\inc\\shootersam\\uht\\animnotify_doattacktrace.generated.h",
+            "d:\\projects\\unreal 5 project\\ue_gamedevcourse\\unreal engine 5 c++ game dev\\shootersam\\shootersam\\source\\shootersam\\variant_combat\\interfaces\\combatattacker.h",
+            "d:\\projects\\unreal 5 project\\ue_gamedevcourse\\unreal engine 5 c++ game dev\\shootersam\\shootersam\\intermediate\\build\\win64\\unrealeditor\\inc\\shootersam\\uht\\combatattacker.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
