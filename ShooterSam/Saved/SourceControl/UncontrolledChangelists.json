@@ -5,7 +5,11 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"D:/Projects/Unreal 5 Project/UE_GameDevCourse/Unreal Engine 5 C++ Game Dev/ShooterSam/ShooterSam/Content/Assets/Levels/TestLevel.umap"
+				"D:/Projects/Unreal 5 Project/UE_GameDevCourse/Unreal Engine 5 C++ Game Dev/ShooterSam/ShooterSam/Content/Assets/Levels/TestLevel.umap",
+				"D:/Projects/Unreal 5 Project/UE_GameDevCourse/Unreal Engine 5 C++ Game Dev/ShooterSam/ShooterSam/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"D:/Projects/Unreal 5 Project/UE_GameDevCourse/Unreal Engine 5 C++ Game Dev/ShooterSam/ShooterSam/Content/Assets/Blueprints/BP_ShooterCharacter.uasset",
+				"D:/Projects/Unreal 5 Project/UE_GameDevCourse/Unreal Engine 5 C++ Game Dev/ShooterSam/ShooterSam/Content/Assets/Blueprints/BP_ShooterSamGameMode.uasset",
+				"D:/Projects/Unreal 5 Project/UE_GameDevCourse/Unreal Engine 5 C++ Game Dev/ShooterSam/ShooterSam/Content/Assets/Blueprints/BP_ShooterSamPlayerController.uasset"
 			]
 		}
 	]
