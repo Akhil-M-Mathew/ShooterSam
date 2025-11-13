@@ -45,7 +45,6 @@
 			"SideScrollingSoftPlatform.gen.cpp.obj",
 			"SideScrollingStateTreeUtility.gen.cpp.obj",
 			"SideScrollingUI.gen.cpp.obj",
-			"PerModuleInline.gen.cpp.obj",
 			"ShooterSam.cpp.obj",
 			"ShooterSamCharacter.cpp.obj",
 			"ShooterSamGameMode.cpp.obj",
@@ -76,7 +75,20 @@
 			"PlatformingPlayerController.cpp.obj",
 			"SideScrollingAIController.cpp.obj",
 			"SideScrollingNPC.cpp.obj",
-			"SideScrollingStateTreeUtility.cpp.obj"
+			"SideScrollingStateTreeUtility.cpp.obj",
+			"PerModuleInline.gen.cpp.obj"
+		],
+		"Module.ShooterSam.3.cpp.obj": [
+			"SideScrollingJumpPad.cpp.obj",
+			"SideScrollingMovingPlatform.cpp.obj",
+			"SideScrollingPickup.cpp.obj",
+			"SideScrollingSoftPlatform.cpp.obj",
+			"SideScrollingInteractable.cpp.obj",
+			"SideScrollingCameraManager.cpp.obj",
+			"SideScrollingCharacter.cpp.obj",
+			"SideScrollingGameMode.cpp.obj",
+			"SideScrollingPlayerController.cpp.obj",
+			"SideScrollingUI.cpp.obj"
 		]
 	}
 }

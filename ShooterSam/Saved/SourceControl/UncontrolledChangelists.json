@@ -9,7 +9,10 @@
 				"D:/Projects/Unreal 5 Project/UE_GameDevCourse/Unreal Engine 5 C++ Game Dev/ShooterSam/ShooterSam/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
 				"D:/Projects/Unreal 5 Project/UE_GameDevCourse/Unreal Engine 5 C++ Game Dev/ShooterSam/ShooterSam/Content/Assets/Blueprints/BP_ShooterCharacter.uasset",
 				"D:/Projects/Unreal 5 Project/UE_GameDevCourse/Unreal Engine 5 C++ Game Dev/ShooterSam/ShooterSam/Content/Assets/Blueprints/BP_ShooterSamGameMode.uasset",
-				"D:/Projects/Unreal 5 Project/UE_GameDevCourse/Unreal Engine 5 C++ Game Dev/ShooterSam/ShooterSam/Content/Assets/Blueprints/BP_ShooterSamPlayerController.uasset"
+				"D:/Projects/Unreal 5 Project/UE_GameDevCourse/Unreal Engine 5 C++ Game Dev/ShooterSam/ShooterSam/Content/Assets/Blueprints/BP_ShooterSamPlayerController.uasset",
+				"D:/Projects/Unreal 5 Project/UE_GameDevCourse/Unreal Engine 5 C++ Game Dev/ShooterSam/ShooterSam/Content/Assets/Animation/ABP_ShooterCharacter.uasset",
+				"D:/Projects/Unreal 5 Project/UE_GameDevCourse/Unreal Engine 5 C++ Game Dev/ShooterSam/ShooterSam/Content/ParagonWraith/Characters/Heroes/Wraith/Animations/Locomotion_Combat/Idle_Combat.uasset",
+				"D:/Projects/Unreal 5 Project/UE_GameDevCourse/Unreal Engine 5 C++ Game Dev/ShooterSam/ShooterSam/Content/Assets/Animation/BS_Locomotion.uasset"
 			]
 		}
 	]
