@@ -12,7 +12,10 @@
 #include "InputActionValue.h"
 #include "ShooterSam.h"
 
+#include "ShooterSamPlayerController.h"
 
+#define LogOnScreen(x) GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Red, FString::Printf(TEXT(x)));
+#define LOG_WARNING(x) UE_LOG(LogTemp,Warning,TEXT(x));
 
 AShooterSamCharacter::AShooterSamCharacter()
 {
@@ -57,6 +60,8 @@ void AShooterSamCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	OnTakeAnyDamage.AddDynamic(this, &AShooterSamCharacter::OnDamageTaken);
+	Health = MaxHealth;
+	UpdateHUD();
 	
 	Gun = GetWorld()->SpawnActor<AGunActor>(GunClass);
 	GetMesh()->HideBoneByName("weapon_r", EPhysBodyOp::PBO_None);
@@ -160,8 +165,36 @@ void AShooterSamCharacter::DoShoot()
 	if (Gun)	{	Gun->PullTrigger();	}
 }
 
-void AShooterSamCharacter::OnDamageTaken(AActor* DamagedActor, float Damage, const class UDamageType* DamageType,
-	class AController* InstigatedBy, AActor* DamageCauser)
+void AShooterSamCharacter::UpdateHUD()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Red, FString::Printf(TEXT("DamageTaken by %s"), *DamagedActor->GetActorNameOrLabel()));
+	if (AShooterSamPlayerController* PlayerController = Cast<AShooterSamPlayerController>(GetController()))
+	{
+		float NewPercent = Health/MaxHealth;
+		if (NewPercent < 0)
+		{
+			NewPercent = 0;
+		}
+		PlayerController->HUDWidget->SetHealthBarPercent(NewPercent);
+	}
+}
+
+void AShooterSamCharacter::OnDamageTaken(AActor* DamagedActor, float Damage, const class UDamageType* DamageType,
+                                         class AController* InstigatedBy, AActor* DamageCauser)
+{
+	if (IsAlive)
+	{
+		Health -= Damage;
+		UpdateHUD();
+		// GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Red, FString::Printf(TEXT("Health is %f"), Health));
+		LogOnScreen("Health reduced");
+		if (Health <= 0)
+		{
+			IsAlive = false;
+			Health = 0.0f;
+			GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+			DetachFromControllerPendingDestroy();
+		}
+		UpdateHUD();
+	}
+	
 }

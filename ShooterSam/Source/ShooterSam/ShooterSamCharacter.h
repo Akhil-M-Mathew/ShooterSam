@@ -105,8 +105,18 @@ public:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AGunActor> GunClass;
 
+	UPROPERTY(EditAnywhere)
+	float MaxHealth = 100.0f;
+
+	float Health;
+
+	UPROPERTY(BlueprintReadOnly)
+	bool IsAlive = true;
+	
 	AGunActor* Gun;
 
+	void UpdateHUD();
+	
 	UFUNCTION()
 	void OnDamageTaken(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 };
